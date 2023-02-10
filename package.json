@@ -1,0 +1,19 @@
+{
+  "name": "placement-cell",
+  "version": "1.0.0",
+  "description": "full stack app for companies and student for placement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashantsingh896/placement-cell.git"
+  },
+  "author": "Prashant Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashantsingh896/placement-cell/issues"
+  },
+  "homepage": "https://github.com/prashantsingh896/placement-cell#readme"
+}
