@@ -1,0 +1,40 @@
+<header style="background-color: #333;">
+    <style>
+        .navbar a {
+          color: white !important;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between" style="background-color: #333; color: white;">
+      <a class="navbar-brand" href="#">Placement Cell</a>
+      <div class="d-flex">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <% if(locals.user) { %>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile">Hello <%= locals.user.username%></a>
+              </li>
+            <%}%>
+            <li class="nav-item">
+              <a class="nav-link" href="/dashboard">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/student/add-student">Add New Student</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/interview/add-interview">Add an Interview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/download">Export to Excel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/sign-out">Sign Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
