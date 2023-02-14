@@ -1,0 +1,3 @@
+﻿student_ID,student_Name,student_College,student_Email,student_Batch,student_Placement_Status,student_DSA_Score,student_Webd_Score,student_React_Score,interview_Date,interview_Company,interview_Result
+"63e94571aad18e1571dbbe7a","Prashant","JMI","prashantsingh@gmail.com","Jan'22","Placed",100,99,98,"2023-02-23","Mastercard","Didn't attempt"
+"63ebd6b9358db558561b1b68","Ram","IITB","ram@gmail.com","Jan'23","Not placed",12,123,0,"","",""

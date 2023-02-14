@@ -49,23 +49,26 @@ module.exports.create = async (req, res) => {
       if (!student) {
         await Student.create(
           {
-            name,
-            email,
-            college,
-            batch,
-            dsa_score,
-            react_score,
-            webdev_score,
-            placementStatus,
+            name:name,
+            email:email,
+            college:college,
+            batch:batch,
+            dsaScore:dsa_score,
+            reactScore:react_score,
+            webdScore:webdev_score,
+            placed:placementStatus,
           },
           (err, student) => {
             if (err) {
+              console.log('Student creation failed: ',err);
               return res.redirect("back");
             }
+            console.log('Successfully created');
             return res.redirect("back");
           }
         );
       } else {
+        console.log('Student already exist in the data base');
         return res.redirect("back");
       }
     });
@@ -126,10 +129,10 @@ module.exports.update = async (req, res) => {
     student.name = name;
     student.college = college;
     student.batch = batch;
-    student.dsa_score = dsa_score;
-    student.react_score = react_score;
-    student.webdev_score = webdev_score;
-    student.placementStatus = placementStatus;
+    student.dsaScore = dsa_score;
+    student.reactScore = react_score;
+    student.webdScore = webdev_score;
+    student.placed = placementStatus;
 
     student.save();
     return res.redirect("/dashboard");

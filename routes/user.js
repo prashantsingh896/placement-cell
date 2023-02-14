@@ -30,7 +30,7 @@ router.post('/create-session', passport.authenticate('local',{failureRedirect:'/
 router.get('/sign-out',userController.destroySession);
 
 //router for CSV
-router.get('/download',reportController.downloadCsv);
+router.get('/download',reportController.downloadCsv); 
 
 module.exports = router;
 

@@ -13,3 +13,5 @@ router.post('/enroll-in-interview/:id',interviewController.enrollInterview);
 
 //remove student from interview
 router.get('/deallocate/:studentId/:interviewId',interviewController.deallocate);
+
+module.exports = router;

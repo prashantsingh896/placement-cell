@@ -1,5 +1,6 @@
 const User = require("../models/user");
 
+//render profile page
 module.exports.profile = function (req, res) {
     return res.render("user_profile", {
         title: "User Profile",
@@ -58,6 +59,7 @@ module.exports.create = async (req, res) => {
 
         // if password doesn't match
         if (password != confirm_password) {
+            console.log(password+" "+confirm_password);
             console.log("Passwords doesn't match");
             return res.redirect("back");
         }

@@ -46,7 +46,7 @@ const studentSchema = new mongoose.Schema({
         },
         result:{
             type: String,
-            enum:["Pass","On Hold", "Fail", "Didn't attempt"]
+            enum:["pass","on hold", "fail", "didn't attempt"].map(status=>status.toLowerCase())
         }
     }]
 },{timestamps:true});
